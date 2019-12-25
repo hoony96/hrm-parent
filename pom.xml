@@ -13,6 +13,7 @@
         <module>hrm-supports-parent</module>
         <module>hrm-system-parent</module>
         <module>hrm-basic-parent</module>
+        <module>hrm-course-parent</module>
     </modules>
 
     <properties>
@@ -43,7 +44,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--增加 mysql的版本控制-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.18</version>
+            </dependency>
         </dependencies>
+
     </dependencyManagement>
 
     <!-- 热启动-->
@@ -57,6 +65,7 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
     </dependencies>
 
 </project>

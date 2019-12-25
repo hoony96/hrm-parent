@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 20140814
+    initialSize: 5
+    maxActive: 100
+    minIdle: 10
+    maxWait: 10000
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    cn.itsource: debug
+
+mybatis-plus:
+  mapper-locations: classpath*:cn/itsource/hrm/mapper/*Mapper.xml
+  type-aliases-package: cn.itsource.hrm.domain,cn.itsource.hrm.query

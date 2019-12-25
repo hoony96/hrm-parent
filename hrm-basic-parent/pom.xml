@@ -14,6 +14,7 @@
     <modules>
         <module>hrm-basic-util</module>
         <module>hrm-basic-generator</module>
+        <module>hrm-basic-starter</module>
     </modules>
 
 

@@ -5,28 +5,9 @@ spring:
   application:
     name: SYSTEM-SERVICE
   datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql:///hrm-system?serverTimezone=UTC&useSSL=false&useUnicode=true&characterEncoding=utf8
-    username: root
-    password: 20140814
-    initialSize: 5
-    maxActive: 100
-    minIdle: 10
-    maxWait: 10000
 
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    prefer-ip-address: true
-
-logging:
-  level:
-    cn.itsource: debug
-
-mybatis-plus:
-  mapper-locations: classpath*:cn/itsource/hrm/mapper/*Mapper.xml
-  type-aliases-package: cn.itsource.hrm.domain,cn.itsource.hrm.query
+hrm:
+  starter:
+    title: 系统管理服务
+    description: 系统管理服务接口文档
