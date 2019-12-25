@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-basic-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-supports-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-system-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-system-parent/hrm-system-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-system-parent/hrm-system-service" charset="UTF-8" />
+  </component>
+</project>
