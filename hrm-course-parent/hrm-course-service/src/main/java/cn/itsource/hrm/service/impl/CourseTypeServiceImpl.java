@@ -96,9 +96,7 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         // 把查询出来的父级菜单装到Map中
         Map<Long,CourseType> map = new HashMap<>();
         for (CourseType type : types) {
-            if(type.getPid().longValue() == 0){
-                map.put(type.getId(),type);
-            }
+            map.put(type.getId(),type);
         }
 
         for (CourseType type : types) {

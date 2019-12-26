@@ -11,6 +11,7 @@ import lombok.experimental.Accessors;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -33,10 +34,10 @@ public class CourseType extends Model<CourseType> {
     private Long id;
 
     @TableField("createTime")
-    private Long createTime;
+    private Long createTime = new Date().getTime();
 
     @TableField("updateTime")
-    private Long updateTime;
+    private Long updateTime = new Date().getTime();
 
     /**
      * 类型名
@@ -44,12 +45,12 @@ public class CourseType extends Model<CourseType> {
     private String name;
 
     /**
-     * 父ID
+     * 父ID  == > 下拉框选择
      */
     private Long pid;
 
     /**
-     * 图标
+     * 图标  ==> 图片上传?
      */
     private String logo;
 
@@ -62,7 +63,7 @@ public class CourseType extends Model<CourseType> {
     private Integer sortIndex;
 
     /**
-     * 路径
+     * 路径  ==> 父级 到 子级  自动生成把
      */
     private String path;
 
