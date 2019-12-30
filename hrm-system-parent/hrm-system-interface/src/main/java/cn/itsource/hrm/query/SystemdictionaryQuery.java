@@ -1,8 +1,7 @@
 package cn.itsource.hrm.query;
 
 
-
-
+import cn.itsource.basic.query.BaseQuery;
 
 /**
  * <p>

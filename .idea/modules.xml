@@ -6,11 +6,15 @@
       <module fileurl="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-parent.iml" filepath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-starter/hrm-basic-starter.iml" filepath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-starter/hrm-basic-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util/hrm-basic-util.iml" filepath="$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util/hrm-basic-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-supports-parent/hrm-config-server/hrm-config-server.iml" filepath="$PROJECT_DIR$/hrm-supports-parent/hrm-config-server/hrm-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-interface/hrm-course-interface.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-interface/hrm-course-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-parent.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-service/hrm-course-service.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/hrm-course-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server/hrm-eureka-server.iml" filepath="$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server/hrm-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-parent.iml" filepath="$PROJECT_DIR$/hrm-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-interface/hrm-redis-interface.iml" filepath="$PROJECT_DIR$/hrm-redis-parent/hrm-redis-interface/hrm-redis-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-parent.iml" filepath="$PROJECT_DIR$/hrm-redis-parent/hrm-redis-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-service/hrm-redis-service.iml" filepath="$PROJECT_DIR$/hrm-redis-parent/hrm-redis-service/hrm-redis-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-supports-parent/hrm-supports-parent.iml" filepath="$PROJECT_DIR$/hrm-supports-parent/hrm-supports-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-supports-parent/hrm-supports-parent (1).iml" filepath="$PROJECT_DIR$/hrm-supports-parent/hrm-supports-parent (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-system-parent/hrm-system-interface/hrm-system-interface.iml" filepath="$PROJECT_DIR$/hrm-system-parent/hrm-system-interface/hrm-system-interface.iml" />

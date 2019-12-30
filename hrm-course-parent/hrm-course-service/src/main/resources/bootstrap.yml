@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: COURSE-SERVICE
+  cloud:
+    config:
+      name: application-course  # 配置文件的名
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER # 配置中心注册的名
+  profiles:
+    active: dev
+

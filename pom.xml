@@ -14,6 +14,7 @@
         <module>hrm-system-parent</module>
         <module>hrm-basic-parent</module>
         <module>hrm-course-parent</module>
+        <module>hrm-redis-parent</module>
     </modules>
 
     <properties>
@@ -50,7 +51,15 @@
                 <artifactId>mysql-connector-java</artifactId>
                 <version>8.0.18</version>
             </dependency>
+            <!-- fastjson的版本控制-->
+            <dependency>
+                <groupId>alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.17</version>
+            </dependency>
         </dependencies>
+
+
 
     </dependencyManagement>
 

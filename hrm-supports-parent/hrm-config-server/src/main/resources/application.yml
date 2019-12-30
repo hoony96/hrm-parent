@@ -1,0 +1,19 @@
+server:
+  port: 1299
+
+# 注册到eureka中
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
+spring:
+  application:
+    name: CONFIG-SERVER
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hoony96/hrm-config.git  # github中配置文件的位置
+

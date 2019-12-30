@@ -14,6 +14,7 @@
     <modules>
         <module>hrm-eureka-server</module>
         <module>hrm-zuul-gateway</module>
+        <module>hrm-config-server</module>
     </modules>
 
     <!--  web的包-->

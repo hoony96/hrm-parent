@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: REDIS-SERVICE
+  cloud:
+    config:
+      name: application-redis  # 配置文件的名
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER # 配置中心注册的名
+  profiles:
+    active: dev

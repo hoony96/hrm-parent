@@ -2,28 +2,22 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-basic-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-basic-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-generator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-starter" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-basic-parent/hrm-basic-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-course-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-redis-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-supports-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-supports-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-zuul-gateway" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-system-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-system-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-system-parent/hrm-system-interface" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-system-parent/hrm-system-interface" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/hrm-system-parent/hrm-system-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-system-parent/hrm-system-service" charset="UTF-8" />
   </component>
 </project>
