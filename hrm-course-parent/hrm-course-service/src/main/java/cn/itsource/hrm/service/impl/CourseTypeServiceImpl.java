@@ -33,6 +33,57 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
 
     private final String COURSE_TYPE = "hrm:course_type:all";
 
+//    private final String CHILD_COURSE_TYPE = "hrm:course_type:childs";
+//
+//    @Override
+//    public List<CourseType> loadLastChilds() {
+//        List<CourseType> list = new ArrayList<>();
+//        // 从 redis中查询
+//        String redisStr = redisClient.get(CHILD_COURSE_TYPE);
+//        // 判断
+//        if(StringUtils.isNotEmpty(redisStr)){
+//            // 有 就直接返回
+//            list = JSONObject.parseArray(redisStr, CourseType.class);
+//        }else{
+//            // 没有
+//
+//            // 查数据库
+//            list = mapAndIter();
+//            // 保存到 redis 中
+//            String str = JSONObject.toJSONString(list);
+//            redisClient.set(COURSE_TYPE,str);
+//        }
+//        // 返回数据
+//        return list;
+//    }
+//
+//    public List<CourseType> childMap(){
+//        List<CourseType> list = new ArrayList<>();
+//
+//        List<CourseType> types = baseMapper.selectList(null);
+//
+//        // 把查询出来的父级菜单装到Map中
+//        Map<Long,CourseType> map = new HashMap<>();
+//        for (CourseType type : types) {
+//            map.put(type.getId(),type);
+//        }
+//
+//        for (CourseType type : types) {
+//            // 无子目录的一级目录
+//            if(type.getChildren().size() == 0){
+//                list.add(type);
+//            }else{
+//                // type为子级目录
+//                CourseType courseType = map.get(type.getPid());  // 获取到父级目录
+//                // 装入父级目录中
+//                if(courseType != null){
+//                    courseType.getChildren().add(type);
+//                }
+//            }
+//        }
+//        return list;
+//    }
+
     @Override
     public List<CourseType> loadTreeData() {
         List<CourseType> list = new ArrayList<>();
@@ -158,6 +209,7 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         // 保存到redis
         String jsonString = JSONObject.toJSONString(list);
         redisClient.set(COURSE_TYPE,jsonString);
+//        redisClient.set(CHILD_COURSE_TYPE,jsonString);
     }
 
 

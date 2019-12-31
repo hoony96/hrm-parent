@@ -16,4 +16,6 @@ import java.util.List;
 public interface ICourseTypeService extends IService<CourseType> {
 
     List<CourseType> loadTreeData();
+
+//    List<CourseType> loadLastChilds();
 }

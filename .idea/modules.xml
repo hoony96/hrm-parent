@@ -11,6 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-parent.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-service/hrm-course-service.iml" filepath="$PROJECT_DIR$/hrm-course-parent/hrm-course-service/hrm-course-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server/hrm-eureka-server.iml" filepath="$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server/hrm-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-redis-parent/hrm-fastdfs-interface/hrm-fastdfs-interface.iml" filepath="$PROJECT_DIR$/hrm-redis-parent/hrm-fastdfs-interface/hrm-fastdfs-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hrm-redis-parent/hrm-fastdfs-service/hrm-fastdfs-service.iml" filepath="$PROJECT_DIR$/hrm-redis-parent/hrm-fastdfs-service/hrm-fastdfs-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-parent.iml" filepath="$PROJECT_DIR$/hrm-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-interface/hrm-redis-interface.iml" filepath="$PROJECT_DIR$/hrm-redis-parent/hrm-redis-interface/hrm-redis-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-parent.iml" filepath="$PROJECT_DIR$/hrm-redis-parent/hrm-redis-parent.iml" />

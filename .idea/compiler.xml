@@ -13,6 +13,8 @@
         <module name="hrm-course-interface" />
         <module name="hrm-course-service" />
         <module name="hrm-eureka-server" />
+        <module name="hrm-fastdfs-interface" />
+        <module name="hrm-fastdfs-service" />
         <module name="hrm-redis-interface" />
         <module name="hrm-redis-service" />
         <module name="hrm-system-interface" />
@@ -30,6 +32,8 @@
       <module name="hrm-course-parent" target="1.8" />
       <module name="hrm-course-service" target="1.8" />
       <module name="hrm-eureka-server" target="1.8" />
+      <module name="hrm-fastdfs-interface" target="1.8" />
+      <module name="hrm-fastdfs-service" target="1.8" />
       <module name="hrm-parent" target="1.8" />
       <module name="hrm-redis-interface" target="1.8" />
       <module name="hrm-redis-parent" target="1.8" />

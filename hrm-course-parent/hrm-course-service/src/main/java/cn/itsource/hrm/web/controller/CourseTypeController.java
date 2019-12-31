@@ -88,4 +88,9 @@ public class CourseTypeController {
     public List<CourseType> loadTreeData(){
         return courseTypeService.loadTreeData();
     }
+
+    @GetMapping("/lastChilds")
+    public List<CourseType> lastChilds(){
+        return courseTypeService.loadTreeData();
+    }
 }
