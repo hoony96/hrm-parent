@@ -18,7 +18,6 @@ eureka:
   instance:
     prefer-ip-address: true
 
-SYSTEM-SERVICE:
-  ribbon:
-    ReadTimeout: 60000  # 单位毫秒数
-    SocketTimeout: 60000
+ribbon:
+  ReadTimeout: 60000  # 单位毫秒数
+  SocketTimeout: 60000

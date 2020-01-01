@@ -18,6 +18,7 @@ public class RedisClientImpl implements RedisClient {
 
     @Override
     public String get(String key) {
-        return "请求失败,这里是拖地数据";
+//        return "请求失败,这里是拖地数据";
+        throw  new RuntimeException();
     }
 }

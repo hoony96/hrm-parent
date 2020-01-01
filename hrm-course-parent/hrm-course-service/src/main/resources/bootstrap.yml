@@ -10,3 +10,13 @@ spring:
   profiles:
     active: dev
 
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+

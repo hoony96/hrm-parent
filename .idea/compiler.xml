@@ -12,6 +12,8 @@
         <module name="hrm-config-server" />
         <module name="hrm-course-interface" />
         <module name="hrm-course-service" />
+        <module name="hrm-es-interface" />
+        <module name="hrm-es-service" />
         <module name="hrm-eureka-server" />
         <module name="hrm-fastdfs-interface" />
         <module name="hrm-fastdfs-service" />
@@ -31,6 +33,8 @@
       <module name="hrm-course-interface" target="1.8" />
       <module name="hrm-course-parent" target="1.8" />
       <module name="hrm-course-service" target="1.8" />
+      <module name="hrm-es-interface" target="1.8" />
+      <module name="hrm-es-service" target="1.8" />
       <module name="hrm-eureka-server" target="1.8" />
       <module name="hrm-fastdfs-interface" target="1.8" />
       <module name="hrm-fastdfs-service" target="1.8" />
