@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: PAGE-SERVICE
+  cloud:
+    config:
+      name: application-page  # 配置文件的名
+      discovery:
+        enabled: true
+        service-id: CONFIG-SERVER # 配置中心注册的名
+  profiles:
+    active: dev
+
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
+
+

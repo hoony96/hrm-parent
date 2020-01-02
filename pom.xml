@@ -15,6 +15,7 @@
         <module>hrm-basic-parent</module>
         <module>hrm-course-parent</module>
         <module>hrm-redis-parent</module>
+        <module>hrm-page-parent</module>
     </modules>
 
     <properties>

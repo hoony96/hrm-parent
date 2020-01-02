@@ -15,7 +15,7 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
 
-        ResourceBundle rb = ResourceBundle.getBundle("course-type-generator");
+        ResourceBundle rb = ResourceBundle.getBundle("page-type-generator");
         AutoGenerator mpg = new AutoGenerator();
 
         // 全局配置
@@ -115,7 +115,7 @@ public class CodeGenerator {
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setEntityLombokModel(true);
-        strategy.setInclude("t_course","t_course_detail","t_course_market","t_course_resource");//生成的表
+        strategy.setInclude("t_page_config","t_pager","t_site");//生成的表
         strategy.setTablePrefix("t_");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new VelocityTemplateEngine());
