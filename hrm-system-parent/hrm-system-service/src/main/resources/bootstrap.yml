@@ -9,3 +9,11 @@ spring:
         service-id: CONFIG-SERVER # 配置中心注册的名
   profiles:
     active: dev
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 10000
