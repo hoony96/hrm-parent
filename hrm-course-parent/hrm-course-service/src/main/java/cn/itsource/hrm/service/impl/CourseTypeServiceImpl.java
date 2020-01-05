@@ -1,6 +1,7 @@
 package cn.itsource.hrm.service.impl;
 
 import cn.itsource.hrm.client.RedisClient;
+import cn.itsource.hrm.client.StaticPageClient;
 import cn.itsource.hrm.domain.CourseType;
 import cn.itsource.hrm.mapper.CourseTypeMapper;
 import cn.itsource.hrm.service.ICourseTypeService;
@@ -30,6 +31,10 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
 
     @Autowired
     private RedisClient redisClient;
+
+    @Autowired
+    private StaticPageClient staticPageClient;
+
 
     private final String COURSE_TYPE = "hrm:course_type:all";
 
@@ -83,6 +88,7 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
 //        }
 //        return list;
 //    }
+
 
     @Override
     public List<CourseType> loadTreeData() {
@@ -233,5 +239,23 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         super.updateById(entity);
         synchronizeOperation();
         return true;
+    }
+
+    /**
+     *  静态化页面
+     * @param pageId
+     */
+    @Override
+    public void prepareDataAndPage(Long pageId) {
+
+        // 保存数据到redis  -  查出来
+        List<CourseType> types = loadTreeData();
+        String jsonString = JSONObject.toJSONString(types);
+        String key = "page:"+pageId+"staticPage";
+        redisClient.set(key,jsonString);
+
+        // 调用接口  模板 + 数据 = 页面
+        staticPageClient.staticPageInSP(key,pageId);
+
     }
 }

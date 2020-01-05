@@ -17,5 +17,7 @@ public interface ICourseTypeService extends IService<CourseType> {
 
     List<CourseType> loadTreeData();
 
+    void prepareDataAndPage(Long pageId);
+
 //    List<CourseType> loadLastChilds();
 }

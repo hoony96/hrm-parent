@@ -93,4 +93,16 @@ public class CourseTypeController {
     public List<CourseType> lastChilds(){
         return courseTypeService.loadTreeData();
     }
+
+
+    @GetMapping("/static/{id}")
+    public AjaxResult staticPage(@PathVariable("id") Long pageId){
+        try {
+            courseTypeService.prepareDataAndPage(pageId);
+            return AjaxResult.me();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMessage("失败,请重试");
+        }
+    }
 }

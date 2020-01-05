@@ -9,6 +9,7 @@
     <file url="file://$PROJECT_DIR$/hrm-course-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-course-parent/hrm-course-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-page-mq" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-page-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-page-parent/hrm-page-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-page-parent/hrm-page-service" charset="UTF-8" />
@@ -19,6 +20,9 @@
     <file url="file://$PROJECT_DIR$/hrm-redis-parent/hrm-fastdfs-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-interface" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-redis-parent/hrm-redis-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-static-page" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-static-page/hrm-static-page-interface" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hrm-static-page/hrm-static-page-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-supports-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-config-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrm-supports-parent/hrm-eureka-server" charset="UTF-8" />
