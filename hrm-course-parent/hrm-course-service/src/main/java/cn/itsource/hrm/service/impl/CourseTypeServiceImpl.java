@@ -258,4 +258,39 @@ public class CourseTypeServiceImpl extends ServiceImpl<CourseTypeMapper, CourseT
         staticPageClient.staticPageInSP(key,pageId);
 
     }
+
+    /**
+     *  List.html 获取面包屑
+     * @param courseTypeId
+     * @return
+     */
+    @Override
+    public List<Map<String, Object>> getCrumbs(Long courseTypeId) {
+        CourseType courseType = baseMapper.selectById(courseTypeId);
+        // 使用其中的冗余字段  path 来获取 父级目录
+        String path = courseType.getPath();
+        path = path.substring(1);
+        String[] pids = path.split("\\.");
+
+        List<Map<String, Object>> list = new ArrayList<>();
+        // 循环所有的 path中的id
+        for (String id : pids) {
+            Map<String,Object> types = new HashMap<>();
+            // 根据id 查询到 对应的当前类型
+            CourseType currentType = baseMapper.selectById(id);
+            types.put("currentType",currentType);
+
+            // 根据 pid 查询当前类型的其他类型
+            List<CourseType> otherTypes = baseMapper.selectList(new QueryWrapper<CourseType>()
+                    .eq("pid", currentType.getPid())
+                    .ne("id",id)
+            );
+            types.put("otherTypes",otherTypes);
+
+            // 把这个 map放入 list中返回
+            list.add(types);
+        }
+        return list;
+    }
+
 }

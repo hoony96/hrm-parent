@@ -32,7 +32,7 @@ public class FastdfsController {
     }
 
     @GetMapping("/delete")
-    public AjaxResult delete(String file_id){
+    public AjaxResult delete(@RequestParam("file_id") String file_id){
         try {
             int index = file_id.indexOf("/");
             file_id = file_id.substring(index+1);

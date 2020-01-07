@@ -1,15 +1,16 @@
 package cn.itsource.hrm.web.controller;
 
+import cn.itsource.basic.util.AjaxResult;
+import cn.itsource.basic.util.PageList;
 import cn.itsource.hrm.domain.CourseType;
 import cn.itsource.hrm.query.CourseTypeQuery;
 import cn.itsource.hrm.service.ICourseTypeService;
-import cn.itsource.basic.util.AjaxResult;
-import cn.itsource.basic.util.PageList;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/courseType")
@@ -104,5 +105,10 @@ public class CourseTypeController {
             e.printStackTrace();
             return AjaxResult.me().setSuccess(false).setMessage("失败,请重试");
         }
+    }
+
+    @GetMapping("/getCrumbs")
+    public List<Map<String,Object>> getCrumbs(@RequestParam("courseTypeId")Long courseTypeId){
+        return courseTypeService.getCrumbs(courseTypeId);
     }
 }

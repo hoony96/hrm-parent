@@ -1,8 +1,10 @@
 package cn.itsource.hrm.client;
 
 import cn.itsource.basic.util.AjaxResult;
+import cn.itsource.basic.util.PageList;
 import cn.itsource.hrm.client.impl.ESCourseFallback;
 import cn.itsource.hrm.doc.ESCourse;
+import cn.itsource.hrm.query.QueryCourse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -24,4 +26,6 @@ public interface ESCourseClient {
     @PostMapping("/delete")
     public AjaxResult deleteIndex(@RequestBody List<Long> ids);
 
+    @PostMapping("/query")
+    PageList<ESCourse> queryCourses(@RequestBody QueryCourse queryCourse);
 }

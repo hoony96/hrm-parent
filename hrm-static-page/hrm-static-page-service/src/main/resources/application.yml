@@ -18,3 +18,7 @@ hystrix:
             timeoutInMilliseconds: 10000
 server:
   port: 9008
+
+ribbon:
+  ReadTimeout: 60000
+  ConnectTimeout: 60000

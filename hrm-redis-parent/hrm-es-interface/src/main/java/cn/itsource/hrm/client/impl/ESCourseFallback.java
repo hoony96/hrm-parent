@@ -1,8 +1,10 @@
 package cn.itsource.hrm.client.impl;
 
 import cn.itsource.basic.util.AjaxResult;
+import cn.itsource.basic.util.PageList;
 import cn.itsource.hrm.client.ESCourseClient;
 import cn.itsource.hrm.doc.ESCourse;
+import cn.itsource.hrm.query.QueryCourse;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -23,5 +25,10 @@ public class ESCourseFallback implements ESCourseClient {
     @Override
     public AjaxResult deleteIndex(List<Long> ids) {
         return AjaxResult.me().setSuccess(false).setMessage("失败,请重试");
+    }
+
+    @Override
+    public PageList<ESCourse> queryCourses(QueryCourse queryCourse) {
+        return null;
     }
 }

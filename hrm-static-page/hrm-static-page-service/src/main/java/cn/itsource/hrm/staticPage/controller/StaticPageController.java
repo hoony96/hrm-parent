@@ -100,7 +100,7 @@ public class StaticPageController {
             // 推送消息给MQ
             Map<String,Object> map1 = new HashMap<>();
             map1.put("pageId", pageId);
-            map1.put("fileId", fileId);
+            map1.put("fileId", htmlFileId);
             map1.put("physicalPath", pager.getPhysicalPath());
             String msgStr = JSONObject.toJSONString(map1);
             rabbitTemplate.convertAndSend("hrm-course",msgStr);

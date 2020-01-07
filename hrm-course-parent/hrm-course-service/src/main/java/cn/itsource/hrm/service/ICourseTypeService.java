@@ -4,6 +4,7 @@ import cn.itsource.hrm.domain.CourseType;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -18,6 +19,8 @@ public interface ICourseTypeService extends IService<CourseType> {
     List<CourseType> loadTreeData();
 
     void prepareDataAndPage(Long pageId);
+
+    List<Map<String,Object>> getCrumbs(Long courseTypeId);
 
 //    List<CourseType> loadLastChilds();
 }

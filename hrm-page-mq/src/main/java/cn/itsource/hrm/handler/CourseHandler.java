@@ -31,10 +31,11 @@ public class CourseHandler {
     @RabbitListener(queues = {RabbitmqConfig.QUEUE_INFORM_SITE})
     public void courseListenr(String msg, Message message, Channel channel){
         // 有变化执行的步骤
-        // 下载 html  => msg 是一个 json字符串 要变成对象
+        // 下载   html=> msg 是一个 json字符串 要变成对象
         JSONObject jsonObject = JSONObject.parseObject(msg);
         // 存放了 pageID  physicalPath  fileId
         String fileId = jsonObject.get("fileId").toString();
+        System.out.println(fileId);
         String physicalPath = jsonObject.get("physicalPath").toString();
 
         // 写出到 hrm-course中
@@ -46,7 +47,7 @@ public class CourseHandler {
             inputStream = response.body().asInputStream();
 
             // 写出的位置
-            outputStream = new FileOutputStream("D:/java/IdeaWorkSpace/hrm-vue/hrm-course");
+            outputStream = new FileOutputStream("D:/java/IdeaWorkSpace/hrm-vue/hrm-course/home.html");
 
             // 写出
             IOUtils.copy(inputStream,outputStream);
